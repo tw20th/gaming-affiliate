@@ -1,36 +1,35 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# ✅ Node.js 関連
 /node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
 
-# testing
-/coverage
-
-# next.js
+# ✅ Next.js 関連
 /.next/
 /out/
 
-# production
+# ✅ ビルドフォルダ
 /build
 
-# misc
+# ✅ macOS システムファイル
 .DS_Store
-*.pem
 
-# debug
+# ✅ ローカル環境変数（セキュリティのため）
+.env.local
+
+# ✅ デバッグログ
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# ✅ テスト関連
+/coverage
 
-# vercel
-.vercel
-
-# typescript
+# ✅ TypeScript 関連
 *.tsbuildinfo
 next-env.d.ts
+
+# ✅ Vercel 用
+.vercel/
+
+# ✅ セキュリティ関連（秘密鍵など）
+*.pem
